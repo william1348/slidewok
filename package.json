@@ -1,7 +1,6 @@
 {
-  "name": "wacky3.0",
+  "name": "lonesomefiddles",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "start": "nodemon -e js,ejs"
@@ -21,5 +20,6 @@
     "express": "^4.18.2",
     "mongodb": "^4.12.1",
     "nodemon": "^2.0.20"
-  }
+  },
+  "description": ""
 }
