@@ -1,0 +1,159 @@
+/*	dark brown:
+	#3c2415;
+
+	mid brown: 
+	#603913;
+
+	lite brown: 
+	#d3b297;
+
+	yellow:
+	#ffde17;
+
+*/
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+	padding:0;
+	margin:0;
+	background:white;
+}
+
+#main-section{
+	margin-top:20px;
+	margin-bottom:50px;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+/*	background:green;*/
+}
+
+.sub-heading{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#category-container{
+	width:100%;
+}
+
+#left-sample-container{
+	position:relative;
+	width:48%;
+	padding:20px;
+	padding-left:50px;
+	margin:auto;
+}
+
+#left-sample-image{
+	width:100%;
+	text-align:left;
+}
+
+#left-sample-text-overlay{
+	top:10px;
+	position:absolute;
+	background:#efefef;
+	opacity: 0.9;
+	color:#444;
+	font-size:14px;
+	padding-left:5px;
+	padding-right:15px;
+}
+
+#tagline-container{
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align: center;
+  	/*color:	#603913;*/
+  	color:#603913;
+  	line-height:1.8;
+}
+
+.tagline-text{
+	margin-top:5px;
+	margin-bottom:0px;
+	font-size:24px;
+	font-family: 'Coming Soon', cursive;
+	font-weight:600;
+}
+
+#right-sample-img{
+	width:100%;
+}
+
+#right-sample-container{
+  	background-color: #ffde17;
+	padding:5px;
+}
+
+#right-sample-text-overlay{
+
+}
+
+/* LEFT SAMPLE */
+#left-sample-title{
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+#bottom-description{
+	max-width:650px;
+	width:100%;
+	text-align: center;
+	color:#603913;
+	padding:30px;
+	font-family: 'Coming Soon', cursive;
+	line-height:1.8;
+	font-size:17px;
+	margin-top:30px;
+}
+
+#see-all-container{
+	margin-top:20px;
+	text-decoration: none;
+	text-align:center;
+	margin-bottom:100px;
+}
+
+#see-all-button{
+	height:auto;
+	font-size:16px;
+	box-shadow: 1px 1px 2px #666;
+	border-radius:5px;
+	border:2px #603913 solid;
+	background:	#ffde17;
+	color: #603913;
+	padding:1px 10px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+@media (max-width: 650px) {
+
+	.build-your-own-button{
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+
+	#tagline-container{
+		padding-left:30px;
+		padding-right:30px;
+	}
+
+	#left-sample-container{
+		margin-top:20px;
+	}
+
+	#left-sample-image{
+		width:100%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+
