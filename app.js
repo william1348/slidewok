@@ -10,18 +10,19 @@ var CATEGORIES = [];
 var ITEMS = [];
 var CONFIG = [];
 
-var dbUrl ="mongodb+srv://admin:ilovemillie123@project.cib5r.mongodb.net/?retryWrites=true&w=majority";
+// var dbUrl ="mongodb+srv://admin:ilovemillie123@project.cib5r.mongodb.net/?retryWrites=true&w=majority";
+var dbUrl ="mongodb+srv://admin:ilovemillie123@cluster0.mnt3rz6.mongodb.net/?retryWrites=true&w=majority";
 
 async function connectMongo(){
 	(async () => {
         client = await MongoClient.connect(dbUrl,
             { useNewUrlParser: true });
 
-        db = client.db('project');
+        db = client.db('lonesomefiddles');
         try {
-    		CONFIG = await db.collection("config").find({}).toArray();
-			CATEGORIES = await db.collection("categories").find({}).toArray();
-			ITEMS = await db.collection("items").find({}).toArray();		
+   //  		CONFIG = await db.collection("config").find({}).toArray();
+			// CATEGORIES = await db.collection("categories").find({}).toArray();
+			// ITEMS = await db.collection("items").find({}).toArray();		
         }
         finally {
             console.log("all loaded");

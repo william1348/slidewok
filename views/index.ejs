@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>WackyPackies</title>
+	<title>lonesomefiddles</title>
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-ui.js"></script>
@@ -26,71 +26,40 @@
 	<%- include('navigation.ejs') %>
 
 
-	<section id="top-fold">
-		<div class="container">
-			<div class="column">
-				<div id="left-sample-container">
-						<img id="left-sample-image" src="img/box.png">
-					<div id="left-sample-text-overlay">
-						<!-- <div id="left-sample-title">Birthday Box</div> -->
-					</div>
-				</div>
-			</div>
-
-			<!-- <div class="one-third column ">
-				<div id="right-sample-container">
-					<img id="right-sample-img" src="img/box.jpeg">
-					<div id="right-sample-text-overlay">
-						<div id="left-sample-text-overlay">
-						<div id="left-sample-title">Build Your Own</div>
-						
-					</div>
-						<div class="left-sample-desc">Personalized card with custom graphics</div>
-						<div class="left-sample-desc">Pick and choose add-on items</div>
-						<div class="left-sample-desc">Free shipping on orders $25</div>
-					</div>
-				</div>
-
-			</div> -->
-		</div>
-	</section>
-
 	<section>
-		<div id="tagline-container" class="container">
-			<div class="tagline-text">Send a personalized care package to anyone, anywhere! </div>
-			<div class="tagline-text"><button class="build-your-own-button"><a class="build-your-own-button-link" href="order?category=-1">Build Your Own</a></button> or choose a curated box to get started. </div>
-		</div>
+		<div id="main-section">
+			<p>Hello and welcome to my website. My name is Will Kung and I am a human being currently residing in Denver, Colorado. I am a professional software engineer and an amateur musician. <span id="about-me" class="more-button"><b>More About Me</b></span></p>
 
+			<p class="center-quote"><i>"Write this down, Take a little note to remind you in case you didn't know"</i> - <b>George Strait</b></p>
+
+			<p>I created lonesomefiddles in an effort to document the thoughts, ideas, and epihanies that come to me during my brief, random bursts of clarity and creativity. In addition to chronicling my String Cheese Incident adventures, . </p>
+
+
+
+
+
+
+			<div id="keep-the-dream">Keep The Dream Alive!</div>
+			<b>Hot Takes</b>
+			Getting married at a music festival is cringe level midnight
+
+			Take Time to Give Thanks, Make Time to be Givin'
+
+
+			<!-- Today I am 
+				<span id="age" class="code-example"></span> 
+				old. -->
+		</div> 
 	</section>
 
-
-	<section id="main-section">
-
-		<div class="container">
-
-			<div id="category-container"/>
-				
-		
-		</div>
-
-		<div id="bottom-description" class="container">
-			All boxes include a personalized card with customizable images. Boxes are assembled locally and ready to ship within 1-3 business days.  
-		</div>
-
-		<div id="see-all-container" class="container">
-			<a class="link_no_underline" href="browse"><button id="see-all-button">See All Categories</button></a>
-		</div>
-		
-	</section>
 
 	<%- include('footer.ejs') %>
 
 </body>
 
 <script type="text/javascript">
-	var data = <%- JSON.stringify(categories) %>
-	//console.log(data);
-	populateCategories(data)
+	var age = whatsMyAgeAgain();
+	$("#age").text(age);
 </script>
 
 </html>

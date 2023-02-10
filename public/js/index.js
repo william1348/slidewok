@@ -17,6 +17,22 @@ function initialize(){
 }
 
 
+function whatsMyAgeAgain(){
+  var dob = new Date("12/8/1991");
+  var today = new Date();
+  var age = today.getFullYear() - dob.getFullYear();
+  var month = today.getMonth() - dob.getMonth();
+  if (month < 0 || (month === 0 && today.getDate() < dob.getDate())) {
+    month = 12 - Math.abs(month);
+    age--;
+  }
+  var day = today.getDate() - dob.getDate();
+  dayString = day > 1 ? (day + " Days" ) : (day + " Day");
+  monthString = month > 1 ? (month + " Months" ) : (month + " Month");
+  ageString = age + " Years";
+  return ageString + ", " + monthString + ", and " + dayString;
+}
+
 
 function populateCategories(list){
   console.log(list);
