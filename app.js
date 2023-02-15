@@ -18,11 +18,14 @@ async function connectMongo(){
         client = await MongoClient.connect(dbUrl,
             { useNewUrlParser: true });
 
-        db = client.db('lonesomefiddles');
+        db = client.db('project');
         try {
-   //  		CONFIG = await db.collection("config").find({}).toArray();
+     		test = await db.collection("test").find({}).toArray();
+     		console.log(test);
 			// CATEGORIES = await db.collection("categories").find({}).toArray();
 			// ITEMS = await db.collection("items").find({}).toArray();		
+        }catch(e){
+        	console.log('error');
         }
         finally {
             console.log("all loaded");
@@ -37,9 +40,18 @@ async function connectMongo(){
 				res.render("index", { categories: CATEGORIES})
 			});
 
+
 			app.get("/browse", (req, res) => {
 				refreshItems();
 				res.render("browse", {categories: CATEGORIES, items : ITEMS})
+			});
+
+			app.get("/projects", (req, res) => {
+				res.render("projects", {})
+			});
+
+			app.get("/projects/poop/:id", (req, res) => {
+				res.render("projects", {})
 			});
 
 			app.get("/order", (req, res) => {
@@ -50,6 +62,57 @@ async function connectMongo(){
 				res.render("payment")
 			});
 
+
+			app.get('/setlists/:id', (req, res)=>{
+				console.log('id is \n');
+				console.log(req.params.id);
+				db.collection("setlists").findOne({"id": req.params.id}, function(error, result) {
+			    	res.json({"IsSuccess" : true, "result" : result})	
+					 // console.log('setlist: ' + result.notes);
+				});
+			});
+
+			app.get('/songs/:id', (req, res)=>{
+				console.log('id is \n');
+				console.log(req.params.id);
+				db.collection("songs").findOne({"id": req.params.id}, function(error, result) {
+			    	res.json({"IsSuccess" : true, "result" : result})	
+					  console.log('song info: ' + result);
+					 
+				});
+			});
+
+
+			// // GET SETLIST OBJECT
+			// app.get('/setlists/:id', (req, res)=>{
+			// 	console.log('req is ' + req);
+			// 	var setlist_id = parseInt(req.params.id);
+			// 	console.log('try to find setlist ' + setlist_id);
+			// 	db.collection("setlists").findOne({"id": setlist_id}, function(error, searchResult) {
+			// 		db.collection("items").find({}).toArray(function(error, itemsResult){
+			// 			if(categoriesResult == null) return;
+			// 			var categoryAddons = categoriesResult.addons;
+			// 			var categoryIncluded = categoriesResult.included;
+			// 			console.log('add ons ' + categoryAddons + ' included ' + categoryIncluded);
+			// 			var finalIncludedArray = [];
+			// 			var finalAddonsArray = [];
+			// 			for(var i=0;i<itemsResult.length;i++){
+			// 				console.log(' from items array. id ' + itemsResult[i].id);
+			// 				if(categoryAddons != null && categoryAddons.includes(itemsResult[i].id)){
+			// 					finalAddonsArray.push(itemsResult[i]);
+			// 					console.log('adding ' + itemsResult[i].id + ' to array');
+			// 				}else if (categoryIncluded != null && categoryIncluded.includes(itemsResult[i].id)){
+			// 					finalIncludedArray.push(itemsResult[i]);
+			// 				}
+			// 			}
+			// 			console.log('# included ' + finalIncludedArray.length + ' # add on ' + finalAddonsArray.length);
+			// 			console.log('category: ' + categoriesResult);
+			// 			categoriesResult.included = finalIncludedArray;
+			// 			categoriesResult.addons = finalAddonsArray;
+			// 			res.json({"IsSuccess" : true, "category" : categoriesResult});
+			// 		});
+			// 	});
+			// });
 
 
 

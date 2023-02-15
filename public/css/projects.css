@@ -1,0 +1,50 @@
+/*	dark brown:
+	#3c2415;
+
+	mid brown: 
+	#603913;
+
+	lite brown: 
+	#d3b297;
+
+	yellow:
+	#ffde17;
+
+*/
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+	padding:0;
+	margin:0;
+	background:white;
+}
+
+
+#setlist-tracker{
+	margin-top:20px;
+}
+
+#setlist-date-long{
+
+}
+
+#setlist-container{
+	margin-top:20px;
+}
+
+.song-link:hover{
+	text-decoration: underline;
+	cursor: default;
+}
+
+#song-container{
+	display:none;
+	background: #eee;
+	max-width: 80%;
+}
+
+#no-song-info{
+	display:none;
+}

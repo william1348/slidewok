@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lonesomefiddles</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/model.js"></script>
+	<script src="js/util.js"></script>
+	<script src="js/projects.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/projects.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/skeleton.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+</head>
+<body>
+	<%- include('navigation.ejs') %>
+
+
+	<section>
+		<div id="main-section">
+			<div class="title">projects</div>
+			<div id="nav">
+				<div id="setlist-tracker" class="nav-item">
+					Setlist Tracker
+					<div id="setlist-date-long"><span><b>DATE </b></span></div>
+					<div id="setlist-location"><span><b>LOCATION </b></span></div>
+					<div id="setlist-notes"><span><b>NOTES </b></span></div>
+					<div id="setlist-container"></div>
+
+
+					<div id="song-container">
+						<div id="song-info">SONG INFO</div>
+						<div id="song-title"></div>
+					</div>
+					<div id="no-song-info">No song information available.</div>
+				</div>
+				<!-- <div id="stats-tracker" class="nav-item">
+					Show Review
+				</div> -->
+			</div>
+		</div>
+
+
+
+	</section>
+
+
+	<%- include('footer.ejs') %>
+
+</body>
+
+<script type="text/javascript">
+</script>
+
+</html>

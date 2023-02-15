@@ -55,6 +55,16 @@ h6{
 	text-align:center;
 }
 
+#main-section{
+	max-width: 960px;
+	font-size: 14px;
+	margin-top:20px;
+	margin-bottom:50px;
+	width:60%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
 #logo{
 	margin-top:10px;
 	width:320px;
