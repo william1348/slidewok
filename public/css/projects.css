@@ -21,17 +21,107 @@ html, body{
 	background:white;
 }
 
+td, tr, th {
+	padding:2px 5px !important;
+	margin:0;
+	max-width: 60%;
+}
+
+br {
+    display: block; 
+    content: "";
+    margin-top: 15px; 
+}
+
+.code br{
+	display: block; 
+    content: "";
+    margin-top: 0px; 
+}
+
+.title{
+	color:#3c2415;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.k{
+	font-weight: bold;
+}
+
+.sample-collection-table{
+	margin-top:10px;
+}
+
+.description{
+	font-size: 12px;
+	color:#666;
+}
+
+
+.v{
+	font-weight: 200;
+}
+
+#setlist-code{
+	margin-top:20px;
+}
 
 #setlist-tracker{
 	margin-top:20px;
 }
 
-#setlist-date-long{
+#nugs-link a{
+	font-size: 10px;	
+	color:#e82425;
+	text-decoration: none;
+	font-weight: bold;
+}
 
+#archive-link a{
+	font-size: 10px;
+	color:#13a0d8;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#archive-link a:hover, #nugs-link a:hover{
+	text-decoration: underline;
 }
 
 #setlist-container{
-	margin-top:20px;
+
+	border-radius: 2px;
+	margin-top:15px;
+}
+
+#setlist-parent-container{
+	padding:10px 15px;
+	border-radius: 3px;
+	margin:20px 0;
+			background: rgba(0,0,0,0.04);
+}
+
+.song-link{
+	font-size: 18px;
+}
+
+#song-container{
+		background: rgba(0,0,0,0.04);
+	max-width: 420px;
+	display:inline-block;
+	padding:5px;
+	margin-bottom: 15px;
+	margin-top:15px;
+}
+
+.song-separator{
+	font-size:18px;
+
+}
+
+#song-info-table{
+	padding:0;
 }
 
 .song-link:hover{
@@ -39,12 +129,28 @@ html, body{
 	cursor: default;
 }
 
-#song-container{
+#song-metadata-container{
 	display:none;
-	background: #eee;
-	max-width: 80%;
+	margin-top:20px;
 }
 
+#setlist-title{
+	font-size: 18px;
+}
+
+#setlist-notes{
+	margin-top:5px;
+	font-size: 12px;
+}
+
+#song-title{
+	display:inline-block;
+	font-size:18px;
+/*	border-bottom:2px #eee solid;*/
+	margin-bottom:10px;
+}
 #no-song-info{
+	font-size:10px;
+	font-style: italic;
 	display:none;
 }

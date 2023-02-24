@@ -39,6 +39,19 @@ h6{
 	font-size:8px;
 }
 
+.code *{
+	font-size: 11px;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.code-block{
+	font-size: 11px;
+	font-family: 'Roboto Mono', monospace;
+	background: #eee;
+	padding:2px 5px;
+	display:inline-block;
+}
+
 
 .center-quote{
 	width:70%;
@@ -170,4 +183,11 @@ h6{
 	.menu-item{
 
 	}
+
+	@media (max-width: 850px) {
+	#main-section{
+		width:90%;
+	}
+	
+}
 
