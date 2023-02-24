@@ -65,7 +65,12 @@
 								<td id="song-info-average-gap" class="song-info-v"></td>
 							</tr>
 								<td class="song-info-k">Setlists:</td>
-								<td id="song-info-setlists" class="song-info-v"></td>
+								<td id="song-info-setlists" class="song-info-v">
+									<span class="setlist-link">12/8/2019</span>,
+									<span class="setlist-link"><br>3/15/2016</span>,
+									<span class="setlist-link"><br>7/7/2014</span>
+
+								</td>
 							</tr>
 							
 						</table>
@@ -73,7 +78,10 @@
 					<div id="no-song-info">No song information available.</div>
 				</div><!-- song container -->
 
+				<div class="description">The <span class="code-block">Setlists</span> field displays a comma separated list of recent setlists where a song appears. Clicking a date from this list populates the setlist (not working for this demo). The section below details how this data is stored. </div><br>
+
 				<div class="title">DATABASE DESIGN</div>
+
 				<div class="description">Ok nerds, here is a high level overview of how this data is structured in MongoDB. With MongoDB (and other document-oriented databases), data is stored as <b>documents</b>, which are gathered together in <b>collections</b>. I chose MongoDB over a more traditional SQL (relational database) approach because of less overhead, more versatility, and easier integration with the technology stack used in this app (Node.js, Express). This is an entry in the  <span class="code-block">SETLISTS</span> collection for the setlist above: </div>
 
 

@@ -63,15 +63,21 @@ function populateSetlist(data){
   }
 
   $('.song-link').click(function(){
-    songId = $(this).attr("song-id");
     $('#song-title').text($(this).html());
+    songId = $(this).attr("song-id");
+    getSong(songId);
+  });
 
-    $.ajax({
-        url: "/songs/" + songId
+  getSong(1001);
+}
+
+
+function getSong(id){
+  $.ajax({
+        url: "/songs/" + id
     }).then(function(res) {
        populateSong(res.result);
     });
-  });
 }
 
 
@@ -80,7 +86,8 @@ function populateSong(song){
     $("#song-metadata-container").hide();
     $("#no-song-info").show();
   }else{
-    $('#song-title').text(song.name);
+    $('#song-title').text(song.title);
+    $('#song-title').show();
     $("#song-metadata-container").show();
     $("#no-song-info").hide();
 
