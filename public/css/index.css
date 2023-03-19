@@ -1,5 +1,5 @@
 /*	dark brown:
-	#3c2415;
+	#3C3237;
 
 	mid brown: 
 	#603913;
@@ -8,7 +8,11 @@
 	#d3b297;
 
 	yellow:
-	#ffde17;
+	#FEC216;
+
+	brown: 3C3237;
+
+	blue: #3D6F89;
 
 */
 *{
@@ -21,16 +25,81 @@ html, body{
 	background:white;
 }
 
-#p-bottom{
-	margin-bottom:100px;
+
+#main{
+	margin-top:150px;
 }
 
-#age{
-	color:#265ea5;
-	font-weight:bold;
+#shows-anchor{
+	max-width:660px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:25px;
 }
 
+#booking-anchor{
+	margin-top:25px;
+}
 
+.show-name{
+	font-size: 20px;
+	font-weight: bold;
+	padding:0;margin:0 !important;
+}
+
+.show-location{
+	font-size: 15px;
+}
+
+.show-link{
+	font-size: 14px;
+	right:2px;bottom:0px;
+	position: absolute;
+}
+
+.show-date{
+	font-size: 12px;
+}
+
+.show-container{
+	position: relative;
+	margin-top:15px;
+}
+
+.show-divider{
+	width:100%;
+	height:3px;
+	margin-top:5px;
+	margin-bottom:5px;
+	background-color: #FEC216;
+}
+.parallax {
+  /* The image used */
+  background-image: url("../img/band_1.jpg");
+  opacity: 0.55;
+  margin-top:-150px;
+
+  /* Set a specific height */
+  min-height: 420px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#booking-img{
+	width:100%;
+	opacity:0.6;
+	text-align: center;
+	margin:auto;
+	display:flex;
+}
+
+#parallax-content{
+	height:1000px;
+}
 
 @media (max-width: 750px) {
 	#main-section{

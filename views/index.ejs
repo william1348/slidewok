@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>lonesomefiddles</title>
+	<title>Slidewok | Denver, CO</title>
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-ui.js"></script>
@@ -23,33 +23,63 @@
 </head>
 <body>
 	<%- include('navigation.ejs') %>
+	<section id="main">
+
+		<div class="parallax">
+			
+		</div>
+
+		<div id="parallax-content">
+
+			<div id="shows-anchor" >
+				<h3 class="centered">UPCOMING SHOWS</h3>
+			
+				<div class="show-container">
+					<div class="show-name"><a class="link-no-underline" href="https://www.exilebrewing.com/">Exile Brewing Company</a></div>
+					<div class="show-location">Des Moines, IA</div>
+					<div class="show-date">5/24/2023</div>
+					<div class="show-description"></div>
+					<div class="show-link"></div>
+				</div>
+				<div class="show-divider"></div>
+
+				<div class="show-container">
+					<div class="show-name"><a class="link-no-underline" href="https://www.exilebrewing.com/">Summer Camp Music Festival</a></div>
+					<div class="show-location">Chillicothe, IL</div>
+					<div class="show-date">5/24 - 5/27/2023</div>
+					<div class="show-description"></div>
+					<div class="show-link"><a class="tickets-link">TICKETS</a></div>
+				</div>
+				<div class="show-divider"></div>
+
+				<div class="show-container">
+					<div class="show-name"><a class="link-no-underline" href="https://www.exilebrewing.com/">Over Yonder Brewing</a></div>
+					<div class="show-location">Golden, CO</div>
+					<div class="show-date">6/24/2023</div>
+					<div class="show-description"></div>
+					<div class="show-link"></div>
+				</div>
+				<div class="show-divider"></div>
+
+				<div class="show-container">
+					<div class="show-name"><a class="link-no-underline" href="https://www.exilebrewing.com/">Cervantes Masterpiece Ballroom</a></div>
+					<div class="show-location">Denver, CO</div>
+					<div class="show-date">7/14/2023</div>
+					<div class="show-description"></div>
+					<div class="show-link"><a class="tickets-link">TICKETS</a></div>
+				</div>
+				<div class="show-divider"></div>
 
 
-	<section>
-		<div id="main-section">
-			<p>Hello, and welcome. My name is Will Kung and I am a software engineer and a musician. I currently reside in Denver, Colorado with my girlfriend Rene and pitbull Millie, who are my best friends in the whole world.
+			</div> <!--shows anchor -->
 
-			<p class="center-quote"><i>"Write this down, Take a little note" </i><br>- <b>George Strait</b></p>
 
-			<p>I started lonesomefiddles in an effort to document the random thoughts, ideas, and epihanies that come to me during my brief moments of clarity and creativity. In addition to chronicling my adventures seeing my favorite band The String Cheese Incident, this website also serves as a sandbox environment for my various projects, most of which I start but never finish.</p>
+			<div id="booking-anchor">
+				<h3 class="centered">BOOKING</h3>
+				<div><img id="booking-img" src="img/cervs_1.jpg"></div>
+			</div>
+		</div>
 
-			<p class="center-quote"><i>One Nation, Under a Groove? </i></p>
-
-			<p>While this begins as a personal project, I'm buildling in opportunities for collaboration right from the start - My ultimate goal is to develop a network of like-minded individuals - i.e. SCI fanatics, jam band enthusiasts and festival goers with projects such as the <span class="project-title">Stats Tracker</span> or <span class="project-title">Show Reviews</span>, as well as a local community of Denver music lovers. Please reach out with any interest or ideas for potential collaboration and, as always, stay cheesey! - Will</p>
-
-			<p id="p-bottom" class="center-quote"><span id="keep-the-dream"><i>Keep The Dream Alive!</i></span></p>
-
-			<!-- <b>Hot Takes</b>
-			Getting married at a music festival is cringe level midnight
- -->
-		<!-- 	Take Time to Give Thanks, Make Time to be Givin'
-
-have a positive impact on the world  -->
-
-			<!-- Today I am 
-				<span id="age" class="code-example"></span> 
-				old. -->
-		</div> 
 	</section>
 
 
@@ -58,8 +88,7 @@ have a positive impact on the world  -->
 </body>
 
 <script type="text/javascript">
-	var age = whatsMyAgeAgain();
-	$("#age").text(age);
+	
 </script>
 
 </html>
