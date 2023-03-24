@@ -97,6 +97,18 @@ html, body{
 	display:flex;
 }
 
+#spotify-container{
+	position:fixed;
+width:250px;
+top:5px;
+right:5px;
+}
+
+#email{
+		text-align: center;
+	margin:auto;
+}
+
 #parallax-content{
 	height:1000px;
 }
