@@ -46,6 +46,10 @@ async function connectMongo(){
 				res.render("browse", {categories: CATEGORIES, items : ITEMS})
 			});
 
+			app.get("/music", (req, res) => {
+				res.render("music", {})
+			});
+
 			app.get("/projects", (req, res) => {
 				res.render("projects", {})
 			});
